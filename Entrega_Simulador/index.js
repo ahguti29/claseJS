@@ -1,21 +1,28 @@
+/* Mensaje de Bienvenida al ingresar al programa */
 alert(
 	'Bienvenidos al categorizador de Trepadores Quindio por favor diligenciar correctamente los datos solicitados'
 );
 
+/* Metodo que permite ubicar un automovil en la categoria que le corresponda
+teniendo en cuenta 3 aspectos que son el cilindraje o cilindrada, la potencia 
+y las modificaciones del vehiculo o caracteristicas  */
 const categoriaAuto = () => {
+	//Variable númerica que almacena dato ingresado por el usuario de acuerdo a lista que se muestra.
 	let caracteristica = parseInt(
 		prompt(
 			'Seleccione el número de acuerdo a la caracteristica de su vehiculo: \n 1. Aspirados \n 2. Aspirados Modificados \n 3. Aspirados Deportivos \n 4. Turbo o Supercargados \n 5. Turbo Stock \n 6. Turbo FWD-AWD-RWD \n 7. Turbos y aspirados FWD-AWD-RWD \n 8. 501 hp o superior'
 		)
 	);
-
+	//Variable que almacena el cilindraje del vehiculo que es ingresado por el usuario
 	let cilindrada = parseInt(
 		prompt('Ingrese la cilindrada de su vehiculo en (CC) : \n Ejemplo: 2000')
 	);
+	//Variable que almacena ñla potencia del vehiculo que es ingresada por el usuario
 	let potencia = parseInt(
 		prompt('Cual es la potencia de su vehiculo en (HP) : \n Ejemplo: 150')
 	);
-
+	/* De acuerdo a la caracteristica ingresada por el usuario evalua cada uno de los valores y de acuerdo  a
+	las  decisiones de cada caso ubica al vehiculo en la categoria que corresponda.*/
 	switch (caracteristica) {
 		case 1:
 			if (cilindrada <= 1400) {
