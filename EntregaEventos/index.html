@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Desafio 9</title>
+</head>
+<body>
+    <h3>Datos del Vehiculo</h3>
+        <div id="contenedorPrincipal">
+            <div>
+                <form id="formulario">
+                    <label for="placa">Placa del Vehiculo:</label>
+                    <input class="iText" type="text" id="placa" name="placa" placeholder="Placa del Vehiculo"/>
+                    <label for="marca">Marca del Vehiculo:</label>
+                    <input class="iText" type="text" id="marca" name="marca" placeholder="Marca del Vehiculo"/>
+                    <label for="linea">Linea del Vehiculo:</label>
+                    <input class="iText" type="text" id="linea" name="linea" placeholder="Linea del Vehiculo"/>
+                    <label for="modelo">Modelo del Vehiculo:</label>
+                    <input class="iText" type="text" id="modelo" name="modelo" placeholder="Modelo del Vehiculo"/>
+                    <label for="color">Color del Vehiculo:</label>
+                    <input class="iText" type="text" id="color" name="color" placeholder="Color del Vehiculo"/>
+                    <label for="cilindrada">Cilindrada (CC):</label>
+                    <input class="iText" type="text" id="cilindrada" name="cilindrada" placeholder="Cilindrada del Vehiculo..."/>
+                    <label for="potencia">Potencia (HP):</label>
+                    <input class="iText" type="text" id="potencia" name="potencia" placeholder="Potencia (HP)"/>
+
+                    <div id="botones">
+                        <input type="submit" id="btn-inscribir" value="inscribir">
+                        <input type="button" id="btn-cancel" value="Mostrar Inscritos">
+                    </div>
+                </form>
+                <div id="carroIngresado">
+                </div>
+            </div>    
+            <div id="listadoCarrosI">
+            </div> 
+        </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
