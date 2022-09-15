@@ -27,8 +27,8 @@ let potenciaC = formulario.children[13].value;
 
 
 let contenedor = document.querySelector("#carroIngresado");
-let listadoCarros = document.querySelector("#listadoCarroI");
-let parrafos = displayTodos.getElementsByTagName("p");
+let listadoCarros = document.querySelector("#listadoCarrosI");
+let parrafos = listadoCarros.getElementsByTagName("p");
 let bandera = false;
 
 miFormulario.addEventListener("submit", agregarCarros);
@@ -45,6 +45,13 @@ function validarForm(){
     cilindradaC = formulario.children[11].value;
     potenciaC = formulario.children[13].value;
 
+    console.log(placaC);
+    console.log(marcaC);
+    console.log(lineaC);
+    console.log(modeloC);
+    console.log(colorC);
+    console.log(cilindradaC);
+    console.log(potenciaC);
     if (placaC === '' || marcaC === '' || lineaC === '' || modeloC === '' || colorC === '' || cilindradaC === '' || potenciaC === ''){
         alert('Debe diligenciar todos los datos');
         inputPlaca.focus();
@@ -74,29 +81,31 @@ function agregarCarros (e){
         cilindradaC = formulario.children[11].value = '';
         potenciaC = formulario.children[13].value = '';
         contenedor.innerHTML = '';
-        agregarAlDom();
+        agregarDom();
+        console.log(agregarDom);
         inputPlaca.focus();
     }else {
-            inputPlaca.focus()
+        inputPlaca.focus()
     }
 }
 
-function agregarAlDom(){
+function agregarDom(){
     contenedor.innerHTML = `<h3> Ultimo carro ingresado: </h3>
-    <p><strong>Placa: </strong> ${placaC}</p>
-    <p><strong>Marca: </strong> ${marcaC}</p>
-    <p><strong>Linea: </strong> ${lineaC}</p>
+    <p><strong>Placa:</strong>${placaC}</p>
+    <p><strong>Marca:</strong>${marcaC}</p>
+    <p><strong>Linea:</strong>${lineaC}</p>
     <hr>`;
 }
 
 function mostrarCarros(e){
     e.preventDefault();
-    listadoCarros.innerHTML = `<h3> Listado de todos los carros inscritos: </h3>`;
+    listadoCarros.innerHTML = `<h3> Carros inscritos: </h3>`;
     for (const carro of cars) {
         listadoCarros.innerHTML += `
         <p><strong>Placa:</strong> ${carro.placa}</p>
         <p><strong>Marca: </strong> ${carro.marca}</p>
         <p><strong>Linea: </strong> ${carro.linea}</p>
+        <p><strong>Linea: </strong> ${carro.modelo}</p>
         <hr>`
     }
 }

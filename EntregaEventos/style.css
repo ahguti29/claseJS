@@ -1,41 +1,69 @@
 *{
     font-family: OpenSansCustom;
-    background-color: darkgray;
+    background-color: rgb(229, 226, 226);
+    color: black;
+    text-align: center
 }
+
 
 #formulario{
     display: flex;
     flex-direction: column;
-    border-radius: 1px solid gray;
+    border-radius: 1px solid rgb(224, 125, 125);
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 260px;
     height: 205px;
     margin: 5px;
-    background-color: #DAF7A6;
+    background-color: #f0d7d8;
 }
 
 #formulario label{
-    background-color:#DAF7A6 ;
+    background-color:#facbcb ;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
     .iText{
-        background-color: whitesmoke;
+        background-color: rgb(212, 140, 140);
     }
 
 #botones{
-    background-color: #DAF7A6;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-#btnSubmit, #btnMostrar{
-    margin-top: 25px;
-    width: 90px;
+#btn-inscribir, #btnCancel{
+    display: table-cell;
+    width: auto;
     height: 30px;
+    background-color: #58d169
 }
 
 #containerPrincipal{
+    position: relative;
+    display: block;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
 }
 
-#displayTodos, #displayTodos p, #displayTodos strong, #displayTodos h3{
+#contenedorFormulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+#listadoCarrosI, #listadoCarrosI p, #listadoCarrosI strong, #listadoCarrosI h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #DAF7A6;
+    padding-top: 20px;
     margin: 5px;
+    width: 50%;
+
 }
