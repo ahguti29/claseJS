@@ -95,6 +95,8 @@ function agregarDom(){
     <p><strong>Marca:</strong>${marcaC}</p>
     <p><strong>Linea:</strong>${lineaC}</p>
     <hr>`;
+
+    return contenedor;
 }
 
 function mostrarCarros(e){

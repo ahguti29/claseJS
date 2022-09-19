@@ -2,7 +2,10 @@
     font-family: OpenSansCustom;
     background-color: rgb(229, 226, 226);
     color: black;
-    text-align: center
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -10,10 +13,11 @@
     display: flex;
     flex-direction: column;
     border-radius: 1px solid rgb(224, 125, 125);
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 260px;
-    height: 205px;
+    height: 80%;
     margin: 5px;
     background-color: #f0d7d8;
 }
@@ -23,6 +27,7 @@
     color: black;
     padding-top: 5px;
     padding-bottom: 5px;
+   
 }
     .iText{
         background-color: rgb(212, 140, 140);
@@ -41,29 +46,30 @@
 }
 
 #containerPrincipal{
-    position: relative;
-    display: block;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-items: center;
-    text-align: center;
+    flex-direction: column;
+    max-height: 100%;
 }
 
 #contenedorFormulario{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    height: auto;
+    text-align: center; 
 }
 
+#carroIngresado{
+    height: 100%;
+    text-align:center;
+    padding: 20px;
+}
 #listadoCarrosI, #listadoCarrosI p, #listadoCarrosI strong, #listadoCarrosI h3{
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
-    background-color: #DAF7A6;
-    padding-top: 20px;
+    background-color: #c3f764;
+    text-align: center;
     margin: 5px;
     width: 50%;
-
 }
